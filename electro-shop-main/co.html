@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electroménagers Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="navbar__logo">Electroménagers Shop</h1>
+    <div>
+      <label for="sort">Trier par :</label>
+      <select id="sort">
+        <option value="date">Date</option>
+        <option value="price">Prix</option>
+        <option value="popularity">Popularité</option>
+      </select>
+    
+      <label for="sort-order">Ordre :</label>
+      <select id="sort-order">
+        <option value="asc">Croissant</option>
+        <option value="desc">Décroissant</option>
+      </select>
+    
+      <button onclick="sortArticles()">Trier</button>
+    </div>
+  
+    <div>
+      <label for="tags">Filtrer par tag :</label>
+      <select id="tags" >
+        <option value="fridge">choisir une option</option>
+        <option value="fridge">Réfrigérateurs</option>
+        <option value="oven">Fours</option>
+        <option value="washer">Lave-linge</option>
+      </select>
+    
+      <button onclick="filterArticles()">Filtrer</button>
+    </div>
+  
+    <div>
+      <label for="search">Rechercher :</label>
+      <input type="text" id="search" placeholder="Entrez un mot-clé">
+      <button onclick="search()">Rechercher</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="article-list">
+      
+    </section>
+  </main>
+ 
+
+  <div class="pagination-container">
+    
+    <ul class="pagination">
+        <li class="lin" value="1">1</li>
+        <li class="lin" value="2">2</li>
+        <li class="lin" value="3">3</li>
+    </ul>
+
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
